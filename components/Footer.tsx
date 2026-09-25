@@ -77,12 +77,35 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-neutral-400">
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-sm text-neutral-400 text-center md:text-left">
             &copy; {new Date().getFullYear()} {clubInfo.name}. All rights reserved.
           </p>
+          
+          {/* Designer Credit Banner */}
+          <a 
+            href="https://www.digitaldictionary.in" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center gap-2 px-6 py-2 overflow-hidden rounded-full bg-white/5 border border-white/10 hover:border-gold/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:-translate-y-0.5"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-gold/0 via-gold/10 to-gold/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>
+            <span className="text-xs md:text-sm text-neutral-400 group-hover:text-white transition-colors">Designed by</span>
+            <span className="text-xs md:text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-gold via-gold-light to-white group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-gold-light group-hover:to-gold transition-all duration-700">
+              Digital Dictionary
+            </span>
+            <svg 
+              className="w-4 h-4 text-gold transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+
           <div className="text-sm text-neutral-400 flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-gold inline-block animate-pulse"></span>
             Since {clubInfo.established}
           </div>
         </div>
