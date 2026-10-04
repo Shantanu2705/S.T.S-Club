@@ -85,64 +85,16 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="block w-full max-w-5xl mx-auto animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:animate-none transition-transform duration-300 hover:scale-[1.02]"
           >
-            <div className="bg-white rounded-xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_0_30px_rgba(255,255,255,0.15)] relative overflow-hidden"
-                 style={{ 
-                   // Torn paper effect simulation at top and bottom using radial gradients perfectly matching the footer background (intelligent color match)
-                   backgroundImage: `
-                     radial-gradient(circle at 10px 0, transparent 10px, white 11px),
-                     radial-gradient(circle at 10px 100%, transparent 10px, white 11px)
-                   `,
-                   backgroundSize: '20px 10px, 20px 10px',
-                   backgroundPosition: 'top, bottom',
-                   backgroundRepeat: 'repeat-x, repeat-x',
-                   paddingTop: '2rem',
-                   paddingBottom: '2rem'
-                 }}>
-              
-              {/* Left Content */}
-              <div className="flex-1 w-full text-center md:text-left z-10">
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-primary-dark mb-6 font-heading tracking-wide">
-                  COMPREHENSIVE AGENCY SOLUTIONS
-                </h3>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 mb-6 text-neutral-800 font-semibold text-sm md:text-base">
-                  <ul className="space-y-3">
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Website Development</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Performance Marketing</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Software Development</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> SEO</li>
-                  </ul>
-                  <ul className="space-y-3">
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Digital Marketing</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Google Ads</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> Mobile App</li>
-                    <li className="flex items-center justify-center md:justify-start gap-2"><span className="w-2 h-2 rounded-full bg-primary-dark"></span> ORM</li>
-                  </ul>
-                </div>
-                
-                <p className="text-lg md:text-xl font-bold text-primary-dark inline-block border-b-2 border-primary-dark pb-1 mt-2">
-                  www.digitaldictionarysiliguri.com
-                </p>
-              </div>
-
-              {/* Right Logo Section */}
-              <div className="relative z-10 flex-shrink-0 flex flex-col items-center justify-center bg-white p-6 md:p-8 rounded-full border-[6px] border-gold shadow-[0_0_30px_rgba(212,175,55,0.4)] w-56 h-56 md:w-64 md:h-64">
-                <div className="absolute inset-2 rounded-full border-2 border-gold/30"></div>
-                <div className="relative">
-                  {/* The big D */}
-                  <span className="text-7xl md:text-8xl font-black bg-clip-text text-transparent bg-gradient-to-b from-gold-light via-gold to-gold-dark drop-shadow-md" style={{ fontFamily: 'var(--font-heading)' }}>
-                    D
-                  </span>
-                </div>
-                <div className="mt-2 text-center w-full relative z-10">
-                  <span className="block text-base md:text-lg font-black bg-clip-text text-transparent bg-gradient-to-r from-gold-dark via-gold to-gold-dark tracking-wider uppercase" style={{ WebkitTextStroke: '0.2px rgba(0,0,0,0.1)' }}>
-                    Digital Dictionary
-                  </span>
-                  <span className="block text-[10px] md:text-xs font-bold text-neutral-800 tracking-[0.3em] mt-1 pt-1 border-t border-gold/50">
-                    SILIGURI
-                  </span>
-                </div>
-              </div>
+            <div className="relative w-full overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.15)] rounded-xl flex justify-center">
+              <img 
+                src="/images/digital-dictionary-banner.png" 
+                alt="Comprehensive Agency Solutions - Digital Dictionary" 
+                className="w-full h-auto"
+                style={{
+                  // If the image is a JPG with a green background, this will help blend it slightly,
+                  // but for the PERFECT color match with the footer, the image should be saved as a transparent PNG.
+                }}
+              />
             </div>
           </Link>
         </div>
