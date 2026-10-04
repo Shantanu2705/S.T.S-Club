@@ -87,7 +87,7 @@ export default function Footer() {
           >
             <div className="relative w-full overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.15)] rounded-xl flex justify-center">
               <img 
-                src="/images/digital-dictionary-banner.png" 
+                src="/images/banner.png" 
                 alt="Comprehensive Agency Solutions - Digital Dictionary" 
                 className="w-full h-auto"
                 style={{
