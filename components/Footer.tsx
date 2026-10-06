@@ -85,16 +85,19 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="block w-full max-w-5xl mx-auto animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:animate-none transition-transform duration-300 hover:scale-[1.02]"
           >
-            <div className="relative w-full overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.15)] rounded-xl flex justify-center">
+            <div className="relative w-full flex justify-center">
               <img 
                 src="/images/banner.png" 
                 alt="Comprehensive Agency Solutions - Digital Dictionary" 
                 className="w-full h-auto"
                 style={{
-                  // If the image is a JPG with a green background, this will help blend it slightly,
-                  // but for the PERFECT color match with the footer, the image should be saved as a transparent PNG.
+                  maskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)",
+                  maskComposite: "intersect",
+                  WebkitMaskComposite: "source-in"
                 }}
               />
+              <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_60px_40px_#07361c]"></div>
             </div>
           </Link>
         </div>
