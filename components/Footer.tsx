@@ -83,7 +83,7 @@ export default function Footer() {
             href="https://www.digitaldictionarysiliguri.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full max-w-5xl mx-auto animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:animate-none transition-transform duration-300 hover:scale-[1.02]"
+            className="block w-full max-w-5xl mx-auto animate-[pulse-bright_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:animate-none transition-transform duration-300 hover:scale-[1.02]"
           >
             <div className="relative w-full flex justify-center">
               <img 
