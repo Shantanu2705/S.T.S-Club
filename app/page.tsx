@@ -1,9 +1,11 @@
 import Hero from "@/components/home/Hero";
 import LegacyStats from "@/components/home/LegacyStats";
+import SponsorshipSection from "@/components/SponsorshipSection";
 import Image from "next/image";
 import Link from "next/link";
 import { clubInfo } from "@/data/club";
 import { galleryImages } from "@/data/gallery";
+import { durgaPujaNotice } from "@/data/sponsorship";
 
 export default function Home() {
   const featuredImages = galleryImages.filter(img => img.featured).slice(0, 4);
@@ -11,6 +13,29 @@ export default function Home() {
   return (
     <>
       <Hero />
+
+      {/* Official Notice Bar */}
+      <div className="bg-primary-dark text-white border-y border-gold/30 py-3.5 px-4 shadow-md relative z-20">
+        <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold text-primary-dark">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary-dark animate-pulse" />
+              Notice
+            </span>
+            <span className="text-sm md:text-base font-medium">
+              <span className="text-gold font-bold">{durgaPujaNotice.year} Pujo Theme:</span> {durgaPujaNotice.theme}
+            </span>
+          </div>
+          <Link
+            href="#sponsorship"
+            className="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold text-gold hover:text-gold-light transition-colors group"
+          >
+            <span>List For Sponsorship DURGA PUJA</span>
+            <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </Link>
+        </div>
+      </div>
+
       <LegacyStats />
 
       {/* History Preview Section */}
@@ -61,6 +86,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Sponsorship & Advertisement Section */}
+      <SponsorshipSection />
 
       {/* Featured Gallery */}
       <section className="py-24 bg-primary-dark text-white">

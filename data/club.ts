@@ -6,7 +6,7 @@ export const clubInfo = {
   registrationNo: "SO218729",
   website: "STSCLUB.org",
   canonicalUrl: "https://stsclub.org",
-  address: "Kolkata, West Bengal, India",
+  address: "Falakata rd, Dhupguri , Dist- Jalpaiguri, West Bengal, 735210",
   phone: "+91 98765 43210",
   whatsapp: "919876543210",
   email: "info@stsclub.org",
