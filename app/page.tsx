@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { clubInfo } from "@/data/club";
 import { galleryImages } from "@/data/gallery";
-import { durgaPujaNotice } from "@/data/sponsorship";
+import { kaliPujaNotice } from "@/data/sponsorship";
 
 export default function Home() {
   const featuredImages = galleryImages.filter(img => img.featured).slice(0, 4);
@@ -23,7 +23,7 @@ export default function Home() {
               Notice
             </span>
             <span className="text-sm md:text-base font-medium">
-              <span className="text-gold font-bold">{durgaPujaNotice.year} Pujo Theme:</span> {durgaPujaNotice.theme}
+              <span className="text-gold font-bold">{kaliPujaNotice.year} Pujo Theme:</span> {kaliPujaNotice.theme}
             </span>
           </div>
           <Link

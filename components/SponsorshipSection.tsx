@@ -1,6 +1,6 @@
 import React from "react";
 import { Phone, MessageCircle, MapPin, Sparkles, Megaphone, CheckCircle2 } from "lucide-react";
-import { sponsorshipData, durgaPujaNotice } from "@/data/sponsorship";
+import { sponsorshipData, kaliPujaNotice } from "@/data/sponsorship";
 import { clubInfo } from "@/data/club";
 
 export default function SponsorshipSection() {
@@ -25,7 +25,7 @@ export default function SponsorshipSection() {
                   2026 Pujo Theme &mdash; <span className="text-gold underline decoration-gold/60 underline-offset-4">Sonali Shankho</span>
                 </h3>
                 <p className="text-neutral-300 text-sm md:text-base">
-                  Durga Puja 2026 Celebration at {clubInfo.name} &bull; Falakata Rd, Dhupguri
+                  Kali Puja 2026 Celebration at {clubInfo.name} &bull; Falakata Rd, Dhupguri
                 </p>
               </div>
 
@@ -53,7 +53,7 @@ export default function SponsorshipSection() {
             List For Sponsorship KALI PUJA
           </h2>
           <p className="text-neutral-600 text-lg leading-relaxed max-w-2xl mx-auto">
-            Partner with {clubInfo.name} for our upcoming Durga Puja festival. Explore our prime sponsorship, advertising slots, and promotional display opportunities.
+            Partner with {clubInfo.name} for our upcoming Kali Puja festival. Explore our prime sponsorship, advertising slots, and promotional display opportunities.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ export default function SponsorshipSection() {
               </a>
 
               <a
-                href={`https://wa.me/91${sponsorshipData.inCharge.rawPhone}?text=${encodeURIComponent(`Hello Nitai Har ji, I would like to inquire about Durga Puja 2026 sponsorship opportunities at S.T.S Club (Theme: ${durgaPujaNotice.theme}).`)}`}
+                href={`https://wa.me/91${sponsorshipData.inCharge.rawPhone}?text=${encodeURIComponent(`Hello Nitai Har ji, I would like to inquire about Kali Puja 2026 sponsorship opportunities at S.T.S Club (Theme: ${kaliPujaNotice.theme}).`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-md bg-white/10 hover:bg-white/20 text-white border border-white/20 font-medium text-sm transition-all backdrop-blur-sm"
@@ -154,7 +154,7 @@ export default function SponsorshipSection() {
               <MapPin size={14} className="text-gold shrink-0" />
               <span>{clubInfo.address}</span>
             </div>
-            <span className="text-gold font-medium">Theme: {durgaPujaNotice.theme}</span>
+            <span className="text-gold font-medium">Theme: {kaliPujaNotice.theme}</span>
           </div>
         </div>
 

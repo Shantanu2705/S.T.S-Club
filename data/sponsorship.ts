@@ -5,9 +5,9 @@ export interface SponsorshipItem {
   description: string;
 }
 
-export const durgaPujaNotice = {
+export const kaliPujaNotice = {
   year: "2026",
-  event: "Durga Puja",
+  event: "Kali Puja",
   theme: "Sonali Shankho",
   tagline: "2026 Pujo Theme - Sonali Shankho",
   noticeText: "Notice: 2026 Pujo Theme - Sonali Shankho",

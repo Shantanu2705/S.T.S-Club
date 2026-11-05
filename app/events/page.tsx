@@ -4,7 +4,7 @@ import { clubInfo } from "@/data/club";
 
 export const metadata = {
   title: `Events & Sponsorship | ${clubInfo.name}`,
-  description: "Official announcements, 2026 Durga Puja Theme: Sonali Shankho, and sponsorship opportunities at S.T.S Club.",
+  description: "Official announcements, 2026 Kali Puja Theme: Sonali Shankho, and sponsorship opportunities at S.T.S Club.",
 };
 
 export default function EventsPage() {
@@ -16,7 +16,7 @@ export default function EventsPage() {
         imageSrc="/gallery/WhatsApp Image 2026-09-25 at 19.06.23.jpeg"
       />
 
-      {/* Durga Puja 2026 Announcement & Sponsorship Section */}
+      {/* Kali Puja 2026 Announcement & Sponsorship Section */}
       <SponsorshipSection />
 
       {/* Calendar Updates Section */}
