@@ -30,7 +30,7 @@ export default function Home() {
             href="#sponsorship"
             className="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold text-gold hover:text-gold-light transition-colors group"
           >
-            <span>List For Sponsorship DURGA PUJA</span>
+            <span>List For Sponsorship KALI PUJA</span>
             <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
           </Link>
         </div>

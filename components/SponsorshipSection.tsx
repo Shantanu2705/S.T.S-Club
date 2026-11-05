@@ -50,7 +50,7 @@ export default function SponsorshipSection() {
             <span className="w-8 h-[1px] bg-gold"></span>
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary-dark mb-4">
-            List For Sponsorship DURGA PUJA
+            List For Sponsorship KALI PUJA
           </h2>
           <p className="text-neutral-600 text-lg leading-relaxed max-w-2xl mx-auto">
             Partner with {clubInfo.name} for our upcoming Durga Puja festival. Explore our prime sponsorship, advertising slots, and promotional display opportunities.

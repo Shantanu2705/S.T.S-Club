@@ -15,7 +15,7 @@ export const durgaPujaNotice = {
 
 export const sponsorshipData = {
   sectionTitle: "Sponsorship & Advertisement",
-  heading: "List For Sponsorship DURGA PUJA",
+  heading: "List For Sponsorship KALI PUJA",
   subheading: "Description of Available Slots & Opportunities",
   noticeTheme: "2026 Pujo Theme - Sonali Shankho",
   inCharge: {
