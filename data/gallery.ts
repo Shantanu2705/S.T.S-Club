@@ -7,6 +7,8 @@ export interface GalleryImage {
 }
 
 export const galleryImages: GalleryImage[] = [
+  { id: "award-2026", src: "/gallery/district-best-shyama-puja-award-2026.jpg", alt: "জেলার সেরা শ্যামা পুজো ২০২৬ - District's Best Shyama Puja Award Trophy", category: "Events", featured: true },
+  { id: "newspaper-2026", src: "/gallery/newspaper-kali-mandap-sts-club.jpg", alt: "Newspaper Feature: Making of STS Club Kali Mandap (Photo: Dipankar Ghatak)", category: "Culture", featured: true },
   { id: "img-1", src: "/gallery/WhatsApp Image 2026-09-25 at 19.06.23 (1).jpeg", alt: "Club moment", category: "Memories", featured: true },
   { id: "img-2", src: "/gallery/WhatsApp Image 2026-09-25 at 19.06.23.jpeg", alt: "Club event", category: "Events" },
   { id: "img-3", src: "/gallery/WhatsApp Image 2026-09-25 at 19.06.24 (1).jpeg", alt: "Cultural activity", category: "Culture" },

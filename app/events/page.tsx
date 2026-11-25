@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import CelebrationSpotlight from "@/components/CelebrationSpotlight";
 import SponsorshipSection from "@/components/SponsorshipSection";
 import { clubInfo } from "@/data/club";
 
@@ -15,6 +16,9 @@ export default function EventsPage() {
         description="Join us at our upcoming celebrations, cultural festivals, and community initiatives."
         imageSrc="/gallery/WhatsApp Image 2026-09-25 at 19.06.23.jpeg"
       />
+
+      {/* Kali Puja 2026 Accolades & Celebration Video */}
+      <CelebrationSpotlight />
 
       {/* Kali Puja 2026 Announcement & Sponsorship Section */}
       <SponsorshipSection />

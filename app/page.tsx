@@ -1,5 +1,6 @@
 import Hero from "@/components/home/Hero";
 import LegacyStats from "@/components/home/LegacyStats";
+import CelebrationSpotlight from "@/components/CelebrationSpotlight";
 import SponsorshipSection from "@/components/SponsorshipSection";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +38,9 @@ export default function Home() {
       </div>
 
       <LegacyStats />
+
+      {/* Celebration & Accolades Spotlight */}
+      <CelebrationSpotlight />
 
       {/* History Preview Section */}
       <section className="py-24 bg-white relative overflow-hidden">
